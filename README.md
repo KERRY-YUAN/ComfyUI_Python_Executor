@@ -41,7 +41,7 @@ This node includes a node for custom Python input within ComfyUI, along with sev
         *   `text2`: Contains `print` output like "Received anyA: 5, anyB: hello".
         *   `any1`: `"Processed 5 and hello"`
    
-![image](https://github.com/KERRY-YUAN/ComfyUI_Python_Executor/blob/main/Examples/Node_ResizeImage_16ceil.png)
+![image](https://github.com/KERRY-YUAN/ComfyUI_Python_Executor/blob/main/Examples/Node_python_executor_ResizeImage_16ceil.png)
 ---
    ### 2. NodeResizeImage (`NodeResizeImage`)
 
@@ -68,7 +68,7 @@ This node includes a node for custom Python input within ComfyUI, along with sev
         *   `width`: `1024`
         *   `height`: `768`
 
-![image](https://github.com/KERRY-YUAN/ComfyUI_Python_Executor/blob/main/Examples/Node_python_executor_ResizeImage_16ceil.png)
+![image](https://github.com/KERRY-YUAN/ComfyUI_Python_Executor/blob/main/Examples/Node_ResizeImage_16ceil.png)
 ---
 
 ## Installation Steps
