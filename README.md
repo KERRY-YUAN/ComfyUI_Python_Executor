@@ -3,11 +3,14 @@ This node includes a node for custom Python input within ComfyUI, along with sev
 本节点包含一个在ComfyUI 中自定义输入python的节点，和一些便捷处理节点。不定时更新中
 
 
-## Nodes
+## Node List
 
 ### 1. NodePythonExecutor (`NodePython`)
+*   Category: DevTools
+*   Node Type: Python Code Execution
 ### 2. NodeResizeImage (`NodeResizeImage`)
-
+*   Category: Image/Transform
+*   Node Type: Image Resizing
 
 ## Node Descriptions
 
@@ -63,6 +66,13 @@ This node includes a node for custom Python input within ComfyUI, along with sev
         *   `width`: `1024`
         *   `height`: `768`
 ---
+
+## Installation Steps
+
+### 1. Clone this repository to ComfyUI's custom_nodes directory:
+*   cd /path/to/comfyui/custom_nodes  # Custom node location
+*   git clone https://github.com/KERRY-YUAN/ComfyUI_Python_Executor.git
+### 2. Restart ComfyUI.
 
 
 ## 节点列表
@@ -124,3 +134,11 @@ This node includes a node for custom Python input within ComfyUI, along with sev
         *   `width`: `1024`
         *   `height`: `768`
 ---
+
+## 安装步骤
+
+
+### 1. 克隆本仓库到 ComfyUI 的 `custom_nodes` 目录：
+*   cd /path/to/comfyui/custom_nodes（自定义节点位置）
+*   git clone https://github.com/KERRY-YUAN/ComfyUI_Python_Executor.git
+### 2. 重启 ComfyUI。
