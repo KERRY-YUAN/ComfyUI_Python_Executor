@@ -1,0 +1,6 @@
+{
+  "name": "ComfyUI_Python_Executor",
+  "author": "KERRY-YUAN",
+  "version": "1.0.0",
+  "comfyui": ">=0.3.0"
+}
