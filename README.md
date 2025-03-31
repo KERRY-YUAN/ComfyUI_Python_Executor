@@ -40,8 +40,9 @@ This node includes a node for custom Python input within ComfyUI, along with sev
         *   `text1`: `"HELLO"`
         *   `text2`: Contains `print` output like "Received anyA: 5, anyB: hello".
         *   `any1`: `"Processed 5 and hello"`
+[![image](https://github.com/KERRY-YUAN/ComfyUI_Python_Executor/blob/main/Examples/Node_ResizeImage_16ceil.png)]
 ---
-### 2. NodeResizeImage (`NodeResizeImage`)
+   ### 2. NodeResizeImage (`NodeResizeImage`)
 
 *   **Description**: Resizes the image based on the target short side (`num`), maintaining aspect ratio, with final width and height both rounded up (ceil) to the nearest multiple of 16.
 *   **Category**: `Image/Transform`
@@ -65,6 +66,7 @@ This node includes a node for custom Python input within ComfyUI, along with sev
         *   `image_resize`: Image with dimensions `1024x768`.
         *   `width`: `1024`
         *   `height`: `768`
+[![image](https://github.com/KERRY-YUAN/ComfyUI_Python_Executor/blob/main/Examples/Node_python_executor_ResizeImage_16ceil.png)]
 ---
 
 ## Installation Steps
