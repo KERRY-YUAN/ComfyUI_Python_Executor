@@ -115,18 +115,18 @@ This node includes a node for custom Python input within ComfyUI, along with sev
 ---
 ### 2. NodeResizeImage (`NodeResizeImage`)
 
-*   **描述**: 根据目标短边 (`num`) 调整图像大小，保持宽高比，最终宽高均向上取整为 16 的倍数。
+*   **描述**: 根据目标短边 (`shortside`) 调整图像大小，保持宽高比，最终宽高均向上取整为 16 的倍数。
 *   **分类**: `Image/Transform`
 *   **输入**:
     *   `image` (IMAGE): 待调整图像。
-    *   `num` (INT): 目标短边基准值 (默认 1024, 范围 560-9600)。
+    *   `shortside` (INT): 目标短边基准值 (默认 1024, 范围 560-9600)。
 *   **输出**:
     *   `image_resize` (IMAGE): 调整后的图像。
     *   `width` (INT): 最终宽度 (16的倍数)。
     *   `height` (INT): 最终高度 (16的倍数)。
 *   **使用范例**:
     *   **目标**: 将 `800x600` 图像的短边目标设为 `768` 进行调整。
-    *   **设置**: 输入 `800x600` 图像, `num` 设为 `768`。
+    *   **设置**: 输入 `800x600` 图像, `shortside` 设为 `768`。
     *   **过程**:
         1. 短边 600, 长边 800。
         2. 目标短边向上取整到 16 倍数 -> `768`。
