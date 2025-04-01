@@ -1,6 +1,6 @@
-from .node_python_executor import NodePythonExecutor
-from .node_resize_image import NodeResizeImage
-from .node_auto_sampler import NodeAutoSampler
+from .NodePythonExecutor import NodePythonExecutor
+from .NodeResizeImage import NodeResizeImage
+from .NodeAutoSampler import NodeAutoSampler
 
 # --- Node Registration / 节点注册 ---
 NODE_CLASS_MAPPINGS = {

@@ -1,6 +1,11 @@
-{
-  "name": "ComfyUI_Python_Executor",
-  "author": "KERRY-YUAN",
-  "version": "1.0.0",
-  "comfyui": ">=0.3.0"
-}
+        {
+            "author": "KERRY-YUAN",
+            "title": "Python_Executor",
+            "id": "PythonExecutor",
+            "reference": "https://github.com/KERRY-YUAN/ComfyUI_Python_Executor",
+            "files": [
+                "https://github.com/KERRY-YUAN/ComfyUI_Python_Executor"
+            ],
+            "install_type": "git-clone",
+            "description": "Nodes: Provides nodes to execute arbitrary Python code snippets and Resize images directly within ComfyUI workflows."
+        },

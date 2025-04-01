@@ -1,3 +1,8 @@
+"""
+Based on the input model name, automatically match the configuration parameters of step count, CFG value, and sampler name through "Auto, Light, Normal, User".
+根据输入的模型名称，通过“Auto、Light、Normal、User”自动化匹配步数、CFG值和采样器名称的配置参数。
+"""
+
 import torch
 import math
 from comfy.samplers import KSampler
@@ -43,7 +48,7 @@ class NodeAutoSampler:
         }
         input_int_str = mode_map[mode]
 
-        mode = "2"  # Default
+        mode = "2"
         if input_int_str in ["1", "2", "3"]:
             mode = input_int_str
         elif input_int_str == "0":
@@ -56,7 +61,7 @@ class NodeAutoSampler:
             processed_string = f"{light_steps};{light_cfg};{light_sampler}"
         elif mode == "2":
             processed_string = f"{normal_steps};{normal_cfg};{normal_sampler}"
-        else:  # mode == "3" or fallback
+        else:
             processed_string = f"{user_steps};{user_cfg};{user_sampler}"
 
         parts = processed_string.split(';')
