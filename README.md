@@ -45,18 +45,18 @@ This node includes a node for custom Python input within ComfyUI, along with sev
 ---
    ### 2. NodeResizeImage (`NodeResizeImage`)
 
-*   **Description**: Resizes the image based on the target short side (`num`), maintaining aspect ratio, with final width and height both rounded up (ceil) to the nearest multiple of 16.
+*   **Description**: Resizes the image based on the target short side (`shortside`), maintaining aspect ratio, with final width and height both rounded up (ceil) to the nearest multiple of 16.
 *   **Category**: `Image/Transform`
 *   **Inputs**:
     *   `image` (IMAGE): Image to be resized.
-    *   `num` (INT): Target short side base value (default 1024, range 560-9600).
+    *   `shortside` (INT): Target short side base value (default 1024, range 560-9600).
 *   **Outputs**:
     *   `image_resize` (IMAGE): The resized image.
     *   `width` (INT): Final width (multiple of 16).
     *   `height` (INT): Final height (multiple of 16).
 *   **Usage Example**:
     *   **Goal**: Resize an `800x600` image, setting the target short side to `768`.
-    *   **Setup**: Input `800x600` image, `num` set to `768`.
+    *   **Setup**: Input `800x600` image, `shortside` set to `768`.
     *   **Process**:
         1. Short side 600, long side 800.
         2. Target short side rounded up to multiple of 16 -> `768`.
