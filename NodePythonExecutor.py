@@ -1,4 +1,7 @@
 """
+Author: "KERRY-YUAN",
+Title: "NodePython",
+Git-clone: "https://github.com/KERRY-YUAN/ComfyUI_Simple_Executor",
 This node executes Python code directly within the ComfyUI workflow.
 此节点直接在 ComfyUI 工作流中执行 Python 代码。
 """
