@@ -1,20 +1,18 @@
 # ComfyUI_Python_Executor
-This node includes a node for custom Python input within ComfyUI, along with several other convenient processing nodes. Subject to occasional updates.
-本节点包含一个在ComfyUI 中自定义输入python的节点，和一些便捷处理节点。不定时更新中
+This node includes a node for custom Python input within ComfyUI.
+本节点包含一个在ComfyUI 中自定义输入python的节点。
 
 
 ## Node List
 
-### 1. NodePythonExecutor (`NodePython`)
+### NodePythonExecutor (`NodePython`)
 *   Category: DevTools
 *   Node Type: Python Code Execution
-### 2. NodeResizeImage (`NodeResizeImage`)
-*   Category: Image/Transform
-*   Node Type: Image Resizing
+
 
 ## Node Descriptions
 
-### 1. NodePythonExecutor (`NodePython`)
+### NodePythonExecutor (`NodePython`)
 
 *   **Description**: Executes Python code within the ComfyUI workflow. Inputs can be accessed via `anyA`-`anyF`, and outputs are defined by assigning values to variables like `num1`-`any3`. Captures `print` output into `text2`.
 *   **Category**: `DevTools`
@@ -43,33 +41,6 @@ This node includes a node for custom Python input within ComfyUI, along with sev
    
 ![image](https://github.com/KERRY-YUAN/ComfyUI_Python_Executor/blob/main/Examples/Node_python_executor_ResizeImage_16ceil.png)
 ---
-   ### 2. NodeResizeImage (`NodeResizeImage`)
-
-*   **Description**: Resizes the image based on the target short side (`shortside`), maintaining aspect ratio, with final width and height both rounded up (ceil) to the nearest multiple of 16.
-*   **Category**: `Image/Transform`
-*   **Inputs**:
-    *   `image` (IMAGE): Image to be resized.
-    *   `shortside` (INT): Target short side base value (default 1024, range 560-9600).
-*   **Outputs**:
-    *   `image_resize` (IMAGE): The resized image.
-    *   `width` (INT): Final width (multiple of 16).
-    *   `height` (INT): Final height (multiple of 16).
-*   **Usage Example**:
-    *   **Goal**: Resize an `800x600` image, setting the target short side to `768`.
-    *   **Setup**: Input `800x600` image, `shortside` set to `768`.
-    *   **Process**:
-        1. Short side 600, long side 800.
-        2. Target short side rounded up to multiple of 16 -> `768`.
-        3. Calculate target long side proportionally -> `800 * (768 / 600) = 1024`.
-        4. Target long side rounded up to multiple of 16 -> `1024`.
-        5. Final dimensions are `1024x768`.
-    *   **Expected Output**:
-        *   `image_resize`: Image with dimensions `1024x768`.
-        *   `width`: `1024`
-        *   `height`: `768`
-
-![image](https://github.com/KERRY-YUAN/ComfyUI_Python_Executor/blob/main/Examples/Node_ResizeImage_16ceil.png)
----
 
 ## Installation Steps
 
@@ -81,12 +52,11 @@ This node includes a node for custom Python input within ComfyUI, along with sev
 
 ## 节点列表
 
-### 1. NodePythonExecutor (`NodePython`)
-### 2. NodeResizeImage (`NodeResizeImage`)
+### NodePythonExecutor (`NodePython`)
 
 ## 节点说明
 
-### 1. NodePythonExecutor (`NodePython`)
+### NodePythonExecutor (`NodePython`)
 
 *   **描述**: 在 ComfyUI 工作流中执行 Python 代码。可通过 `anyA`-`anyF` 访问输入，通过赋值给 `num1`-`any3` 等变量定义输出。捕获 `print` 输出到 `text2`。
 *   **分类**: `DevTools`
@@ -112,31 +82,6 @@ This node includes a node for custom Python input within ComfyUI, along with sev
         *   `text1`: `"HELLO"`
         *   `text2`: 包含 "接收到 anyA: 5, anyB: hello" 等 `print` 输出。
         *   `any1`: `"处理了 5 和 hello"`
----
-### 2. NodeResizeImage (`NodeResizeImage`)
-
-*   **描述**: 根据目标短边 (`shortside`) 调整图像大小，保持宽高比，最终宽高均向上取整为 16 的倍数。
-*   **分类**: `Image/Transform`
-*   **输入**:
-    *   `image` (IMAGE): 待调整图像。
-    *   `shortside` (INT): 目标短边基准值 (默认 1024, 范围 560-9600)。
-*   **输出**:
-    *   `image_resize` (IMAGE): 调整后的图像。
-    *   `width` (INT): 最终宽度 (16的倍数)。
-    *   `height` (INT): 最终高度 (16的倍数)。
-*   **使用范例**:
-    *   **目标**: 将 `800x600` 图像的短边目标设为 `768` 进行调整。
-    *   **设置**: 输入 `800x600` 图像, `shortside` 设为 `768`。
-    *   **过程**:
-        1. 短边 600, 长边 800。
-        2. 目标短边向上取整到 16 倍数 -> `768`。
-        3. 按比例计算目标长边 -> `800 * (768 / 600) = 1024`。
-        4. 目标长边向上取整到 16 倍数 -> `1024`。
-        5. 最终尺寸为 `1024x768`。
-    *   **预期输出**:
-        *   `image_resize`: `1024x768` 尺寸的图像。
-        *   `width`: `1024`
-        *   `height`: `768`
 ---
 
 ## 安装步骤
